@@ -1,12 +1,12 @@
 # PiP-X Codebase
 PiP-X: Funnel-based Online Feedback Motion Re-planning
-Refer to
+This code is to enhance the understandintg of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).
 
 # Usage
 This codebase contains: <br />
 1. Code for running PiP-X in two environments: maze and forest <br />
-2. The function and data structure libraries for running the code (in ./lib)  <br /> 
-3. A pre-computed library of funnels (in ./funnelLibrary) <br />
+2. The function and data structure libraries for running the code (in `./lib`)  <br /> 
+3. A pre-computed library of funnels (in `./funnelLibrary`) <br />
 
 # Troublehsooting
 If you have any questions regarding the codebase or the underlying technical concepts, feel free to reach out to me at khalid26@umd.edu
