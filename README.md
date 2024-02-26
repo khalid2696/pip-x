@@ -8,7 +8,9 @@ This repository contains: <br />
 **This codebase is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).**
 
 # Usage
-Run `PiPXMazeSense.m` or `PiPXForestSense.m` depending on which workspace you wish to run the algorithm on.
+Run `PiPXMazeSense.m` or `PiPXForestSense.m` depending on which workspace you wish to run the algorithm on. <br /> <br />
+
+> Tip: Keep `drawFlag = 1` to get a visual understanding of the workings of the algorithm. Once acquanited with the code, toggle the `drawFlag` to off to quicken the computation speed. 
 
 # Troublehsooting
 If you have any questions regarding the codebase or the underlying technical concepts, feel free to reach out to me at khalid26@umd.edu.
