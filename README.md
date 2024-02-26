@@ -2,8 +2,8 @@
 
 This repository contains: <br />
 1. Code for running PiP-X in two different environments: maze and forest <br />
-2. The data structures and function libraries on which the code depends upon (in `./lib`)  <br /> 
-3. A pre-computed library of funnels (in `./funnelLibrary`) <br />
+2. The data structures and function libraries: code dependencies (in `./lib`)  <br /> 
+3. A pre-computed library of funnels for _online_ re-planning (in `./funnelLibrary`) <br />
 
 **This codebase is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).**
 
