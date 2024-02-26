@@ -1,9 +1,9 @@
 # PiP-X: Funnel-based Online Feedback Motion Re-planning
 
-## This code is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).
+## This codebase is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).
 
 # Usage
-This codebase contains: <br />
+This repository contains: <br />
 1. Code for running PiP-X in two environments: maze and forest <br />
 2. The data structures and function libraries for executing the code (in `./lib`)  <br /> 
 3. A pre-computed library of funnels (in `./funnelLibrary`) <br />
@@ -21,8 +21,7 @@ If you find this codebase helpful, please consider citing our following works. <
   journal={The International Journal of Robotics Research}, <br />
   pages={02783649231209340}, <br />
   year={2023}, <br />
-  publisher={SAGE Publications Sage UK: London, England} <br />
-} <br /> <br />
+  publisher={SAGE Publications Sage UK: London, England} } <br /> <br />
 
 **<ins>Book chapter (from WAFR 2022 proceedings)</ins>:** <br />
 @inproceedings{Jaffar.Otte.WAFR22, <br />
@@ -31,6 +30,5 @@ If you find this codebase helpful, please consider citing our following works. <
   booktitle={International Workshop on the Algorithmic Foundations of Robotics}, <br />
   pages={132--148}, <br />
   year={2022}, <br />
-  organization={Springer} <br />
-}
+  organization={Springer} }
 
