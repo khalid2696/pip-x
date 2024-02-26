@@ -1,11 +1,11 @@
 # PiP-X: Funnel-based Online Feedback Motion Re-planning
 
-## This codebase is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).
-
 This repository contains: <br />
 1. Code for running PiP-X in two environments: maze and forest <br />
 2. The data structures and function libraries for executing the code (in `./lib`)  <br /> 
 3. A pre-computed library of funnels (in `./funnelLibrary`) <br />
+
+**This codebase is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).**
 
 # Usage
 Run `PiPXMazeSense.m` or `PiPXForestSense.m` depending on which workspace you wish to run the algorithm on.
@@ -33,4 +33,3 @@ If you find this codebase helpful, please consider citing our following works. <
   pages={132--148}, <br />
   year={2022}, <br />
   organization={Springer} }
-
