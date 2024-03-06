@@ -425,7 +425,15 @@ end
 
 %Shrinking r-Ball
 function r = rBall(r0,lambda,iteration)
-    r = r0*exp(-1*lambda*iteration);
+    %Below are two versions of shrinking ball radius
+    
+    %1. Shrinking rate from RRT* paper
+    epsilon = 5.5; r0 = 800; d = 2; iteration = iteration+1;
+    r = min(r0*(log(iteration)/(iteration))^1/d,epsilon);
+    
+    %2. This version can also be used -- has found to have practical success 
+    %(as evidenced by the results from the IJRR paper)
+    %r = r0*exp(-1*lambda*iteration);
 end
 
 %Determine the parent node
@@ -471,6 +479,21 @@ function flag = constructFunnelNetwork(F,G,O,newNode,neighbors)
         
         %Add the edge to the search tree
         funnelEdge = funnelStruct(nan,newFunnel);
+        
+        %This implementation of code makes a *simplifying assumption* that
+        %all funnels from/to the new node are compossible with the funnels
+        %at its neighbor nodes.
+        %
+        %This assumption is largely justified for this specific case of 2D
+        %quadrotor planning because of following three reasons:
+        %1. The outlet sizes are considerably small compared to the inlet sizes
+        %2. The funnel library is 'dense' enough to cover an epsilon-ball
+        %3. The steering function makes sure we 'translate' and 'truncate'
+        %   the funnel-edges appropriately
+        
+        %In future, a general implementation of compossibility-check will
+        %make this assumption obsolete, and will eventually modify the below
+        %code-snippets
         
         %funnels and edges direction are swapped (because of reverse search)
         funnelEdge.child = thisNeighbor.index; funnelEdge.parent = newNode.index;
