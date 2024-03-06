@@ -8,6 +8,8 @@ This repository contains: <br />
 
 **This codebase is to improve the understanding of the algorithm that appears in [this IJRR paper](https://journals.sagepub.com/doi/abs/10.1177/02783649231209340).**
 
+<br /> This code is designed for the specific case of 2D planning for a quadrotor, that is the quadrotor holding height and navigating transversely. The funnel libraries are also constructed for this specific case. This implementation code may or may not generalise to other robot systems, or scale to higher dimensional spaces. 
+
 # Usage
 Run `PiPXMazeSense.m` or `PiPXForestSense.m` depending on which (physical) environment you wish to run the algorithm on. <br /> <br />
 
