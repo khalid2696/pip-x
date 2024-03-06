@@ -15,7 +15,7 @@ Run `PiPXMazeSense.m` or `PiPXForestSense.m` depending on which (physical) envir
 
 > Tip: Keep `drawFlag = 1` to get a visual understanding of the workings of the algorithm. Once acquanited with the code, toggle the `drawFlag` to off to quicken the computation speed. 
 
-<br /> Note that changing the algorithm parameter values (from the current ones) might not guarantee performance, and/or might result in undesired behavior.
+<br /> Note that changing the algorithm parameter values (from the current ones) might not guarantee performance, and/or might result in undesired robot behavior.
 
 # Troublehsooting
 If you have any questions regarding the codebase or the underlying technical concepts, feel free to reach out to me at khalid26@umd.edu.
